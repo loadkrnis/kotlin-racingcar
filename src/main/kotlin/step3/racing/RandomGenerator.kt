@@ -1,7 +1,7 @@
 package step3.racing
 
-object RandomGenerator {
-    fun getInt(range: IntRange): Int {
+open class RandomGenerator {
+    open fun getInt(range: IntRange): Int {
         return range.random()
     }
 }
